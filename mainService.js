@@ -1,3 +1,11 @@
-angular.module('assessment').service('mainService', function() {
-  
+angular.module('assessment').service('mainService', function($http) {
+
+      this.getProducts = function() {
+        return $http({
+          method:'GET',
+          url: "http://practiceapi.devmounta.in/products"
+        })
+      }
+
+
 })
