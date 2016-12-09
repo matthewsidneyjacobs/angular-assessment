@@ -1,7 +1,7 @@
 angular.module('assessment').directive('productDirective', function($state, $http, mainService) {
 
     return {
-      restrict: 'AE',
+      restrict: 'E',
       scope: {
         $scope.show = true;
       },
@@ -9,15 +9,6 @@ angular.module('assessment').directive('productDirective', function($state, $htt
 
 
       link: function(scope,elem, attrs) {
-        
-
-
-
-
-
-
-
-
       }
     //   controller: function($scope, mainService) {
     //     $scope.getProducts  = mainService.getProducts().then(function(response){
