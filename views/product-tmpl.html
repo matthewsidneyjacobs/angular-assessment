@@ -3,7 +3,7 @@
         <a class="product-grid__product" ng-click="show = !show" >
             <img class="product-grid__img"   sizes="(min-width: 960px) 33vw, (min-width: 769px) 50vw, 100vw" alt="" ng-src='{{product.image}}' ng-show="show">
         </a>
-        <a class="product-grid__product" ng-click="show = !show">
+        <a class="product-grid__product" ng-show="!show" ng-click="show = !show">
             show image
         </a>
 
