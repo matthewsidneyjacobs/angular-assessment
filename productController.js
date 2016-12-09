@@ -7,8 +7,7 @@ angular.module('assessment').controller('productController', function($scope, $s
   $scope.checkId = function() {
       return $http({
         method:'GET',
-        url: "http://practiceapi.devmounta.in/products/"+$scope.id
-      }).then(function(response){
+        url: "http://practiceapi.devmounta.in/products/"+$scope.id      }).then(function(response){
         $scope.selected = response.data
       });
     }

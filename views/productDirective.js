@@ -2,19 +2,14 @@ angular.module('assessment').directive('productDirective', function($state, $htt
 
     return {
       restrict: 'E',
-      scope: {
-        $scope.show = true;
-      },
+      // scope: {
+      //   // $scope.show: true;
+      //   isolated: '='
+      // },
+
       templateUrl: 'views/product-tmpl.html',
+    }
 
-
-      link: function(scope,elem, attrs) {
-      }
-    //   controller: function($scope, mainService) {
-    //     $scope.getProducts  = mainService.getProducts().then(function(response){
-    //       $scope.products = response.data
-    //   }
-    // }
 
 
 

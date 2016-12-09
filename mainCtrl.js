@@ -7,6 +7,6 @@ angular.module('assessment').controller('mainCtrl', function($scope, mainService
     });
 
 
-    
+    $scope.id = $state.params.id
 
 })
