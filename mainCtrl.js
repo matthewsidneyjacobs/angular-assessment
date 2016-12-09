@@ -1,4 +1,4 @@
-angular.module('assessment').controller('mainCtrl', function($scope, mainService){
+angular.module('assessment').controller('mainCtrl', function($scope, mainService, $state){
 
     $scope.test = "this is working";
 
@@ -6,5 +6,7 @@ angular.module('assessment').controller('mainCtrl', function($scope, mainService
       $scope.products = response.data
     });
 
+
+    
 
 })

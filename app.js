@@ -20,7 +20,13 @@ angular.module('assessment',['ui.router'])
     })
     .state('shop', {
       templateUrl: 'views/shop.html',
-      url:'/shop'
+      url:'/shop',
+      controller: 'productController'
+    })
+    .state('details', {
+      templateUrl: 'views/product-details.html',
+      url: '/detail:id',
+      controller: 'productController'
     })
 
 
